@@ -1,0 +1,64 @@
+{
+  "employeeId": {"S": "unique_employee_id"},
+  "personalInformation": {
+    "M": {
+      "name": {"S": "Employee Name"},
+      "address": {
+        "M": {
+          "street": {"S": "Street Address"},
+          "city": {"S": "City"},
+          "state": {"S": "State"},
+          "zip": {"S": "Zip Code"}
+        }
+      },
+      "dateOfBirth": {"S": "Employee Date of Birth"},
+      "socialSecurityNumber": {"S": "Employee Social Security Number"}
+    }
+  },
+  "employmentInformation": {
+    "M": {
+      "occupation": {"S": "Employee Occupation"},
+      "offerLetter": {"S": "Link to Offer Letter"},
+      "payAuthorization": {"S": "Pay Authorization"}
+    }
+  },
+  "legalForms": {
+    "M": {
+      "formI9": {"S": "Link to Form I-9"},
+      "formW2": {"S": "Link to Form W-2"},
+      "formW4": {"S": "Link to Form W-4"},
+      "stateLocalTaxWithholdingCertificates": {"S": "Link to State/Local Tax Withholding Certificates"}
+    }
+  },
+  "payrollAndFinance": {
+    "M": {
+      "payrollDeductions": {"S": "Payroll Deductions Information"},
+      "directDepositAuthorizationForm": {"S": "Link to Direct Deposit Authorization Form"}
+    }
+  },
+  "timeAndAttendance": {
+    "M": {
+      "salariedTimeAccountingForms": {"S": "Link to Salaried Time Accounting Forms"},
+      "timesheetsTimeClockRecords": {"S": "Link to Timesheets or Time Clock Records"},
+      "timeOffAttendanceRecords": {"S": "Link to Time Off and Attendance Records"}
+    }
+  },
+  "expenseAndReimbursement": {
+    "M": {
+      "expenseReimbursementRequests": {"S": "Link to Expense Reimbursement Requests"},
+      "expenseReceipts": {"S": "Link to Expense Receipts"}
+    }
+  },
+  "legalOrdersAndAuthorizations": {
+    "M": {
+      "garnishmentOrdersRecords": {"S": "Link to Garnishment Orders and Records"},
+      "authorizationReleasePrivateInformation": {"S": "Link to Authorization for Release of Private Information"}
+    }
+  },
+  "payRaisesAndBonuses": {
+    "M": {
+      "payRaisesDocumentation": {"S": "Link to Documentation and Justification for Pay Raises"},
+      "bonusProfitSharingAwardPaperwork": {"S": "Link to Bonus, Profit Sharing, or Award Paperwork"}
+    }
+  }
+}
